@@ -7,9 +7,10 @@ pipeline {
                 sh 'pwd'
                 sh 'ls'
                 sh 'cd jenkins-agent'
-                sh 'terraform init'
-                sh 'terraform plan'
-                sh 'terraform apply'
+                sh 'ls'
+                sh 'sudo terraform init'
+                sh 'sudo terraform plan'
+                sh 'sudo terraform apply'
             }
         }
     }
