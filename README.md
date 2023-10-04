@@ -1,2 +1,2 @@
 # Terraform-GCP
-Terraform template for VPN, Subnet, firewall, GCE dan GKE
+Terraform template for VPC, Subnet, firewall, GCE dan GKE
