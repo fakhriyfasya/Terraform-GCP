@@ -6,7 +6,7 @@ pipeline {
             steps {
                 sh 'pwd'
                 sh 'ls'
-                sh 'cd jenkins-agent/'
+                dir 'jenkins-agent'
                 sh 'ls'
                 sh 'sudo terraform init'
                 sh 'sudo terraform plan'
