@@ -2,9 +2,10 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('Create Instance Jenkins Agent') {
             steps {
-                echo 'Hello World'
+                sh 'pwd'
+                sh 'ls'
             }
         }
     }
