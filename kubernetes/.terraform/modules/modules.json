@@ -1,0 +1,1 @@
+{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"GKE-TEMPLATE","Source":"../gke-template/modules","Dir":"../GKE-TEMPLATE/modules"},{"Key":"GKE_TEMPLATE","Source":"../GKE_TEMPLATE/modules","Dir":""},{"Key":"gke_template","Source":"../gke_template/modules","Dir":""}]}
