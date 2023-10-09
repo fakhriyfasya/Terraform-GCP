@@ -1,5 +1,5 @@
 pipeline {
-    agent any {label "terraform"}
+    agent {label "terraform"}
 
     stages {
         stage('Build Server Jenkins-Agent') {
