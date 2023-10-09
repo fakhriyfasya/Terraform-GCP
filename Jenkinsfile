@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent any {label "terraform"}
 
     stages {
         stage('Build Server Jenkins-Agent') {
@@ -7,7 +7,7 @@ pipeline {
                 script {
                     sh 'pwd'
                     sh 'ls -latr'
-                    dir('/var/lib/jenkins/workspace/Terraform-GCP/jenkins-agent') {
+                    dir('/var/lib/jenkins/workspace/provisioning/jenkins-agent') {
                         sh 'ls' 
                         sh 'sudo terraform init'
                         sh 'sudo terraform plan'
@@ -20,7 +20,7 @@ pipeline {
         stage('Build Server Sonarqube') {
             steps {
                 script {
-                    dir('/var/lib/jenkins/workspace/Terraform-GCP/sonarqube') {
+                    dir('/var/lib/jenkins/workspace/provisioning/sonarqube') {
                         sh 'ls'  
                         sh 'sudo terraform init'
                         sh 'sudo terraform plan'
@@ -33,7 +33,7 @@ pipeline {
         stage('Build Google Kubernetes Engine') {
             steps {
                 script {
-                    dir('/var/lib/jenkins/workspace/Terraform-GCP/kubernetes') {
+                    dir('/var/lib/jenkins/workspace/provisioning/kubernetes') {
                         sh 'ls'
                         sh 'sudo terraform init'
                         sh 'sudo terraform plan'
