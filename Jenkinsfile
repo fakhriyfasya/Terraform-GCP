@@ -9,9 +9,9 @@ pipeline {
                     sh 'ls -latr'
                     dir('/var/lib/jenkins/workspace/provisioning/jenkins-agent') {
                         sh 'ls' 
-                        sh 'sudo terraform init'
-                        sh 'sudo terraform plan'
-                        sh 'sudo terraform apply'
+                        sh 'terraform init'
+                        sh 'terraform plan'
+                        sh 'terraform apply'
                     }
                 }
             }
