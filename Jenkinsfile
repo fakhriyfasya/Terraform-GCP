@@ -5,6 +5,8 @@ pipeline {
         stage('Build Server Jenkins-Agent') {
             steps {
                 script {
+                    sh 'pwd'
+                    sh 'ls -latr'
                     dir('/var/lib/jenkins/workspace/Terraform-GCP/jenkins-agent') {
                         sh 'ls' 
                         sh 'sudo terraform init'
