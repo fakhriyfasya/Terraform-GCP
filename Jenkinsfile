@@ -11,7 +11,7 @@ pipeline {
                         sh 'ls' 
                         sh 'terraform init'
                         sh 'terraform plan'
-                        sh 'terraform apply'
+                        sh 'terraform apply --auto-approve'
                     }
                 }
             }
@@ -22,9 +22,9 @@ pipeline {
                 script {
                     dir('/var/lib/jenkins/workspace/provisioning/sonarqube') {
                         sh 'ls'  
-                        sh 'sudo terraform init'
-                        sh 'sudo terraform plan'
-                        sh 'sudo terraform apply'
+                        sh 'terraform init'
+                        sh 'terraform plan'
+                        sh 'terraform apply --auto-approve'
                     }
                 }
             }
@@ -35,9 +35,9 @@ pipeline {
                 script {
                     dir('/var/lib/jenkins/workspace/provisioning/kubernetes') {
                         sh 'ls'
-                        sh 'sudo terraform init'
-                        sh 'sudo terraform plan'
-                        sh 'sudo terraform apply'
+                        sh 'terraform init'
+                        sh 'terraform plan'
+                        sh 'terraform apply --auto-approve'
                     }
                 }
             }

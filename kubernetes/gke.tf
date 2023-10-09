@@ -6,8 +6,8 @@ module "GKE-TEMPLATE" {
   zone               = "asia-southeast2-a"
   location           = "asia-southeast2-a"
 
-  cluster_name = "cluster-1"
-  node_name    = "web-node"
+  cluster_name = "cluster-2"
+  node_name    = "web-node2"
   machine_type = "e2-medium"
   image_type   = "COS_CONTAINERD"
   disk_type    = "pd-balanced"

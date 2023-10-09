@@ -6,7 +6,7 @@ module "gcp_template" {
   zone               = "asia-southeast2-a"
 
   name         = "sonarqube"
-  machine_type = "e2-medium"
+  machine_type = "e2-micro"
   image        = "ubuntu-os-cloud/ubuntu-2204-lts"
 
   network_name      = "devops-tools-vpc"
