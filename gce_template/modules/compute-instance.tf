@@ -11,8 +11,8 @@ resource "google_compute_instance" "default" {
   }
 
   network_interface {
-    network    = "devops-tools-vpc"
-    subnetwork = "devops-tools-subnet1-asia-southeast2"
+    network    = "devops-tools-vpc2"
+    subnetwork = "devops-tools-subnet2-asia-southeast2"
 
     dynamic "access_config" {
       for_each = var.public_ip ? [""] : []

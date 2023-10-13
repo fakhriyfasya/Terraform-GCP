@@ -7,8 +7,8 @@ resource "google_container_cluster" "primary" {
   # node pool and immediately delete it.
   remove_default_node_pool = true
   initial_node_count       = 2
-  network                  = "devops-tools-vpc"
-  subnetwork               = "devops-tools-subnet1-asia-southeast2"
+  network                  = "devops-tools-vpc2"
+  subnetwork               = "devops-tools-subnet2-asia-southeast2"
   logging_service          = "logging.googleapis.com/kubernetes"
   monitoring_service       = "monitoring.googleapis.com/kubernetes"
   networking_mode          = "VPC_NATIVE"
