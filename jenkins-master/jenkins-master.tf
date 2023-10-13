@@ -5,12 +5,12 @@ module "gcp_template" {
   region             = "asia-southeast2"
   zone               = "asia-southeast2-a"
 
-  name         = "jenkins-master"
+  name         = "jenkins-master2"
   machine_type = "e2-medium"
   image        = "ubuntu-os-cloud/ubuntu-2204-lts"
 
-  network_name      = "devops-tools-vpc"
-  subnetwork_name   = "devops-tools-subnet1-asia-southeast2"
+  network_name      = "devops-tools-vpc2"
+  subnetwork_name   = "devops-tools-subnet2-asia-southeast2"
   subnet_cidr_range = "10.101.21.0/24"
   tags              = ["allow-ssh", "allow-http"]
   public_ip         = true

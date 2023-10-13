@@ -14,8 +14,8 @@ module "GKE-TEMPLATE" {
   disk_size_gb = "30"
 
 
-  network_name      = "devops-tools-vpc"
-  subnetwork_name   = "devops-tools-subnet1-asia-southeast2"
+  network_name      = "devops-tools-vpc2"
+  subnetwork_name   = "devops-tools-subnet2-asia-southeast2"
   subnet_cidr_range = "172.16.20.0/24"
   tags              = ["allow-ssh", "allow-http"]
   public_ip         = true
